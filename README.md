@@ -1,5 +1,3 @@
-React Native Drawer is in need of maintainers. Specifically it requires updating to use Animated lib. There is however an excellent, albeit less configurable option in [React Native Side Menu](https://github.com/react-native-community/react-native-side-menu) which we highly recommend. If you are interested in revamping React Native Drawer please get in touch!
-
 ## React Native Drawer
 <img width="220px" align="right" src="https://raw.githubusercontent.com/rt2zz/react-native-drawer/master/examples/rn-drawer.gif" />
 
@@ -90,7 +88,7 @@ This module supports a wide range of drawer styles, and hence has *a lot* of pro
 
 ##### Animation / Tween
 **Note**: In the future animations with use Animated, and the api will change.
-- `tweenHandler` (Function) `null` - Takes in the pan ratio (decimal 0 to 1) that represents the tween percent. Returns an object of native props to be set on the constituent views { drawer: {/*native props*/}, main: {/*native props*/}, mainOverlay: {/*native props*/} }
+- `tweenHandler` (Function) `null` - Takes in the pan ratio (decimal 0 to 1) that represents the tween percent. Returns and object of native props to be set on the constituent views { drawer: {/*native props*/}, main: {/*native props*/}, mainOverlay: {/*native props*/} }
 - `tweenDuration` (Integer) `250` - The duration of the open/close animation.
 - `tweenEasing` (String) `linear` - A easing type supported by [tween-functions](https://www.npmjs.com/package/tween-functions)
 
@@ -113,7 +111,7 @@ This module supports a wide range of drawer styles, and hence has *a lot* of pro
 - `panOpenMask` (Number) `null` - Ratio of screen width that is valid for the start of a pan open action. If null -> defaults to `max(.05, closedDrawerOffset)`.
 - `panCloseMask` (Number) `null` - Ratio of screen width that is valid for the start of a pan close action. If null -> defaults to `max(.05, openDrawerOffset)`.
 - `initializeOpen` (Boolean) `false` - Initialize with drawer open?
-- `side` (String left|right|top|bottom) `left` - which side the drawer should be on.
+- `side` (String left|right) `left` - which side the drawer should be on.
 - `useInteractionManager` (Boolean) `false` - if true will run InteractionManager for open/close animations.
 - `elevation` (Number) `0` - (Android-only) Sets the elevation of the drawer using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation)
 
