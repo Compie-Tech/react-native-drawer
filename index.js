@@ -1,8 +1,10 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import { PanResponder, View, StyleSheet, Dimensions, InteractionManager } from 'react-native'
 
 import tween from './tweener'
 import { getRtlSide } from './rtl'
+
+import PropTypes from 'prop-types';
 
 let deviceScreen = Dimensions.get('window')
 const DOUBLE_TAP_INTERVAL = 500
